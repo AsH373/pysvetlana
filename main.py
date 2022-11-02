@@ -1,8 +1,8 @@
 
-import pyTelegramBotAPI
-# import telebot
+#import pyTelegramBotAPI
+import telebot
 
-bot =  pyTelegramBotAPI.TeleBot('5688000369:AAFMhLZ4Nbvf3BTM0GcQSf5x8mOahKhZwL8')
+bot =  telebot.TeleBot('5688000369:AAFMhLZ4Nbvf3BTM0GcQSf5x8mOahKhZwL8')
 @bot.message_handler(comamnds = ['start'])
 @bot.message_handler(content_types = ['text'])
 def repeat(message):
