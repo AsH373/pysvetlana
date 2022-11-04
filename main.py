@@ -9,3 +9,4 @@ def repeat(message):
     bot.send_message(message.chat.id, message.text)
 bot.polling(non_stop = True)
 #def __init__(self, name)
+#svetlanapushpulladdgit
