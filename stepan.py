@@ -1,6 +1,7 @@
 import random
 import pygame
 import time
+from os import path
 shirina = 800
 dlina = 600
 pygame.init()
@@ -8,7 +9,13 @@ zarzdka = pygame.display.set_mode((shirina, dlina))
 pygame.display.set_caption("Светлама")
 speed = pygame.time.Clock()
 five = 5
+kartinki = path.join(path.dirname(__file__), "Do_not_open")
+pesna = path.join(path.dirname(__file__), "radyga")
+fon = pygame.image.load(path.join(kartinki,"travka.jpg")).convert()
+fon = pygame.transform.scale(fon, (shirina, dlina))
+layer = fon.get_rect()
 def game():
+#    finiki = [pygame.image.load(path.join())]
     snake = []
     x1 = shirina / 2
     y1 = dlina / 2
